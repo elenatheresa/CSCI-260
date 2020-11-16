@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* 1.html */
+.bookstore{
+    margin:10px;
+    background:white url("1.jpeg") repeat fixed;
+    background-image: url("1.jpeg");
+    color : white;
+    font-weight: 500;
+    font-size-adjust: unset;
+    font-size: 30px;
+}
+
+.button{
+    background-color:white;
+    color:black;
+    padding:10px 15px;
+    border:none;
+    margin: 30px;
+    cursor:help;
+}
+
+.bookstore input[type="text"]{
+    width:80%
+}
+
+.bookstore font{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    letter-spacing: 1.1em;
+    text-align:center;
+}
+
+.bookstore footer{
+    font-size:16px;
+}
+
+.bookstore a{
+    color:white;
+}
+
+.bookstore a:hover{
+    color:rgb(228, 23, 159);
+}
+
+.bookstore a:visited{
+    color:black;
+}
+/* 5.html */
+.searching{
+    margin:10px;
+
+}
+
+.searching:selection{
+    color:red;
+    background:yellow;
+}
+
+.searching caption{
+    background-color:blue;
+    font-stretch: expanded;
+    font-size: 30px;
+    width:100%
+
+}
+
+.searching th{
+    background:lightblue;
+    font-size: 20px;
+}
+
+.searching td{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background:grey;
+
+}
+
+.searching a{
+    border-image:url(5.jpeg) 30 stretch;
+}
+
+
+.button{
+    background-color: #333;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+}
+
+.button:hover{
+    color:pink;
+    background:pink;
+}
+
+/* 8.html */ 
+.helpDesk{
+    margin:10px;
+    background:grey;
+    background-image: url(8.jpeg);
+    background-repeat:repeat-y;
+    background-position:center;
+    background-attachment: fixed;
+    color:purple;
+    text-justify: inter-word;
+}
+
+.helpDesk h3{
+    text-align: justify;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.helpDesk dd{
+    text-indent:10%;
+    padding-left:2px;
+    padding-right:1px;
+    padding-top:2px;
+}
+
+.helpDesk table{
+    border: 5px solid black;
+    border-spacing: 10px;
+
+    border-top-color:black;
+    border-top-style: double;
+    border-top-width: 2px;
+
+    border-left-color: purple;
+    border-left-style: dotted;
+    border-left-width: 1px;
+
+    border-right-color: pink;
+    border-right-style: groove;
+    border-right-width: 10px;
+
+    border-bottom-color:white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.helpDesk a:active{
+    background-color:yellow;
+}
