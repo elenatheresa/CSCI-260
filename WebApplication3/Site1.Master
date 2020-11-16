@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title >Bookstore</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header" style="background-color:white">
+           <h1 style="color: black; font:bold 30px arial, verdana; text-align:center; ">BookStore</h1>
+        </div>
+        <div style="height:300px; overflow:auto">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <br />
+        <asp:Label ID="LabelMsg" runat="server" Text=""></asp:Label>
+        <br />
+          <div id="footer" style="background-color: white;">
+           
+              <asp:Button ID="ButtonEnterBook" runat="server" OnClick="ButtonEnterBook_Click" Text="Enter Books" BorderColor="white" CausesValidation="False" style="font:12px arial, verdana;" />
+              <asp:Button ID="ButtonListBooks" runat="server" Text="List Books" OnClick="ButtonListBooks_Click" BorderColor="white" CausesValidation="False" style="font:12px arial, verdana;"/>
+              <asp:Button ID="ButtonListSubjects" runat="server" Text="List Subjects" OnClick="ButtonListSubjects_Click" BorderColor="white" CausesValidation="False" style="font:12px arial, verdana;"/>
+              <asp:Button ID="ButtonClearDataBase" runat="server" Text="Clear DataBase" OnClick="ClearDatabase_Click" BorderColor="white" CausesValidation="False" style="font:12px arial, verdana;"/>
+           
+        </div>
+    </form>
+</body>
+</html>
