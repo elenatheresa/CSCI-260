@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication4.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title >Book Store</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header" style="background-color: white">
+           <h1 align="center" style="color:deeppink;font:bold 40px arial, verdana;"">BookStore&nbsp;&nbsp;
+              <asp:Button ID="logoutButton" runat="server" Text="Logout" OnClick="logoutButton_Click" CausesValidation="False" style="font: 14px arial, verdana;color:deeppink; background-color:white;"/>
+              <asp:Button ID="enterBooksButton" runat="server" OnClick="enterBooksButton_Click" Text="Enter Books" CausesValidation="False" style="font: 14px arial, verdana;color:deeppink; background-color:white;"/>
+              <asp:Button ID="listAllButton" runat="server" Text="List All" OnClick="listAllButton_Click" CausesValidation="False" style="font: 14px arial,verdana;color:deeppink; background-color:white;"/>
+              <asp:Button ID="listSubjectButton" runat="server" Text="List Subjects" OnClick="listSubjectButton_Click" CausesValidation="False" style="font: 14px arial,verdana;color:deeppink; background-color:white;"/>
+              <asp:Button ID="showOrderButton" runat="server" Text="Show Orders" OnClick="showOrderButton_Click" CausesValidation="False" style="font: 14px arial,verdana;color:deeppink; background-color:white;"/>        
+              <asp:Button ID="shoppingCartButton" runat="server" Text="Show Shopping Cart" OnClick="shoppingCartButton_Click" CausesValidation="False" style="font: 14px arial, verdana;color:deeppink; background-color:white;"/>
+              <asp:Button ID="clearDataBaseButton" runat="server" Text="Clear DataBase" OnClick="clearDataBaseButton_Click" CausesValidation="False" style="font: 14px arial, verdana;color:deeppink; background-color:white;"/>
+              </h1>
+        </div>
+        <div style="height:424px; overflow:auto; width: 1462px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              <div style="width: 1461px; height: 427px">
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+        <br />
+        <asp:Label ID="LabelMsg" runat="server" Text=""></asp:Label>
+        
+        <br />
+          <div id="footer" align="center" style="background-color: white;color:deeppink;font: 14px arial, verdana;">
+              Type to Search Subjects: <asp:TextBox ID="TextBoxSearchTerm" runat="server" Width="294px"></asp:TextBox>
+              <asp:Button ID="searchSubjectButton" runat="server" OnClick="searchSubjectButton_Click" Text="Search" CausesValidation="False" style="font: 14px arial, verdana;color:deeppink; background-color:white;"/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <asp:Button ID="homeButton" runat="server" OnClick="homeButton_Click" Text="Go Home" CausesValidation="False" style="font: 14px arial, verdana;color:deeppink; background-color:white;" />
+        </div>
+    </form>
+</body>
+</html>
